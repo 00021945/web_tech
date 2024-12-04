@@ -220,11 +220,13 @@ img {
 .disclaimer {
   position: fixed;
   z-index: 10;
-  top: 15%;
-  left: 10px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
-  max-width: 500px;
+  max-width: 1120px;
   width: 100%;
+  overflow: auto;
   padding: 10px 20px;
   border-radius: 12px;
 
@@ -232,8 +234,13 @@ img {
   backdrop-filter: blur(10px);
 }
 
+.disclaimer::-webkit-scrollbar {
+  display: none;
+}
+
 .disclaimer > .text {
   color: var(--blue);
+  width: 1120px;
 }
 
 @media screen and (max-width: 855px) {

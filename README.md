@@ -1,15 +1,19 @@
+## Disclaimer
+This website was created to fulfill Web Technology module’s requirements and does not represent an actual company or service
+
 # Web Technology Assignment
 
 This repository contains a web project assignment demonstrating a multi-page website built using HTML, CSS, and JavaScript. It includes pages like Home, About, News, Help, and Contact, along with corresponding styles and scripts.
 
 ## Online Preview
-
+Link: https://00021945-web-tech-assignment.netlify.app
 
 ## Features
 
 Responsive Design: Ensures compatibility across various devices and screen sizes.
 Modular Structure: Separate styles and scripts for each page for easier maintenance.
 Cross-Browser Support: Optimized for major browsers.
+
 
 ## Project Structure
 

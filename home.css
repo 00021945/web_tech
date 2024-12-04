@@ -332,7 +332,7 @@
     top: 0;
     right: 0;
     right: -400px;
-    z-index: 1;
+    z-index: 100;
     transition: all 0.3s ease-in-out;
   }
   .site-header__nav-container--open {
