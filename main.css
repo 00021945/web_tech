@@ -1,0 +1,253 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root { 
+  /* primary colors */
+  --dark-pink: #2aced0;
+  --water-white: #fbfcfe;
+
+  /* secondary colors */
+  --dark-blue: #007f8b;
+  --blue: #36536b;
+  --light-blue: #6c8294;
+  --charm-pink: #02bdbf;
+
+  /* fonts */
+  --dm-serif-display: "DM Serif Display", serif;
+  --public-sans: "Public Sans", sans-serif;
+
+  /* font weights */
+  --regular: 400;
+  --bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #EDF3F8;
+  color: var(--dark-blue);
+}
+
+main {
+  min-height: calc(100vh - 300px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1160px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-family: var(--dm-serif-display);
+  font-weight: var(--regular);
+  color: var(--blue);
+
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.h1-small {
+  font-size: 56px;
+  line-height: 1;
+}
+
+.h2 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.h3-small {
+  font-family: var(--public-sans);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text {
+  font-family: var(--public-sans);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: var(--regular);
+  color: var(--dark-blue);
+
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-family: var(--public-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: var(--bold);
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+
+  transition: all 0.3s ease;
+}
+.btn > * {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.btn > *::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn:disabled {
+  opacity: 0.5;
+}
+
+.btn-primary {
+  background-color: var(--dark-pink);
+  color: var(--water-white);
+}
+
+.btn-primary:hover {
+  opacity: 0.7;
+}
+
+.btn-secondary__light {
+  background-color: var(--dark-blue);
+  color: var(--water-white);
+  border-color: var(--water-white);
+}
+
+.btn-secondary__light:hover {
+  background-color: var(--water-white);
+  color: var(--dark-blue);
+}
+
+.btn-secondary__dark {
+  background-color: var(--water-white);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.btn-secondary__dark:hover {
+  background-color: var(--blue);
+  color: var(--water-white);
+}
+
+.ghost-link {
+  color: var(--dark-blue);
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.ghost-link:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+.gap {
+  gap: 32px;
+}
+
+@media screen and (max-width: 855px) {
+  .h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .btn {
+    padding: 10px 12px;
+  }
+  .h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+}

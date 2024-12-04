@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="about.css">
+  <title>Web Technology Assignment</title>
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="container flex">
+      <a class="ghost-link site-header__logo" href="/index.html">
+        <img src="src/img/logo.svg" width="100" height="30" alt="payapi">
+      </a>
+      <button id="openNav" class="btn site-header__nav-opener" aria-label="open navigation">
+        <img src="src/img/open.svg" width="23" height="23" alt="open navigation">
+      </button>
+      
+      <div id="navMenu" class="flex site-header__nav-container">
+        
+        <div class="site-header__nav-closer">
+          <button id="closeNav" class="btn" aria-label="close navigation">
+            <img src="src/img/close.svg" width="23" height="23" alt="close navigation">
+          </button>
+        </div>
+        
+        <nav class="site-header__nav flex">
+          <ul class="site-header__nav-list flex list">
+            <li class="site-header__nav-item nav-item">
+              <a class="ghost-link" href="/help.html">Help</a>
+            </li>
+            <li class="site-header__nav-item nav-item">
+              <a class="ghost-link" href="/about.html">About</a>
+            </li>
+            <li class="site-header__nav-item nav-item">
+              <a class="ghost-link" href="/news.html">News</a>
+            </li>
+            <li class="site-header__nav-item nav-item">
+              <a class="ghost-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="btn btn-primary"><a class="ghost-link" href="https://merchant.payme.uz/" target="_blank">Give it a try</a></div>
+        
+      </div>
+    </div>
+  </header>
+  
+  <main class="site-main">
+    
+    <section class="about-hero">
+      <div class="container flex">
+        <h1 class="title h1 about-hero__title">We empower innovators
+          by delivering access to the financial system</h1>
+
+          <div class="flex about-hero__text-container">
+            <h2 class="title h2 about-hero__sub-title">Our Vision</h2>
+            <p class="text about-hero__text">Our main goal is to build beautiful consumer experiences along with developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability to create amazing products that solve big problems. We are deeply focused on democratizing financial services through technology. </p>
+          </div>
+          <div class="flex about-hero__text-container">
+            <h2 class="title h2 about-hero__sub-title">Our Business</h2>
+            <p class="text about-hero__text">At the core of our platform is the technical infrastructure that connect consumers. Our innovative product provides key insights for businesses and individuals, as well as robust reporting for traditional financial institutions and developers. </p>
+          </div>
+
+          <img class="about-hero__bg" src="src/img/about-bg.jpg" alt="background" height="400">
+        </div>
+      </section>
+      
+      <section class="contact">
+        <div class="container flex">
+          <h2 class="title h2 contact__title">Ready to start?</h2>
+          
+          <form class="contact__schedule flex schedule-input__form">
+            <label class="schedule-input">
+              <input type="text" placeholder="998 ** *** ** **" pattern="[89][0-9]{11}">
+              <span>Please enter correct format of phone number</span>
+            </label>
+            <div class="btn btn-primary"><a class="ghost-link" href="https://merchant.payme.uz/" target="_blank">Give it a try</a></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="container flex">
+        <nav class="site-footer__nav flex">
+          <a class="ghost-link site-footer__logo" href="/index.html">
+            <img src="src/img/payme_white.png" width="138" height="38" alt="payapi">
+          </a>
+          <ul class="site-footer__nav flex list">
+            <li class="site-footer__nav-item nav-item">
+              <a class="ghost-link" href="/help.html">Help</a>
+            </li>
+            <li class="site-footer__nav-item nav-item">
+              <a class="ghost-link" href="/about.html">About</a>
+            </li>
+            
+            <li class="site-footer__nav-item nav-item">
+              <a class="ghost-link" href="/news.html">News</a>
+            </li>
+            
+            <li class="site-footer__nav-item nav-item">
+              <a class="ghost-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <ul class="flex list gap">
+          <li class="site-footer__social-item social-item">
+            <a class="ghost-link" href="https://www.facebook.com" target="_blank">
+              <img src="src/img/facebook-logo.svg" width="24" height="24" alt="facebook">
+            </a>
+          </li>
+          <li class="site-footer__social-item social-item">
+            <a class="ghost-link" href="https://linkedin.com/" target="_blank">
+              <img src="src/img/linkedin-logo.svg" width="24" height="24" alt="linkedin">
+            </a>
+          </li>
+          <li class="site-footer__social-item social-item">
+            <a class="ghost-link" href="https://www.twitter.com" target="_blank">
+              <img src="src/img/twitter-logo.svg" width="24" height="24" alt="twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer> 
+    <script src="main.js"></script>
+  </body>
+  </html>
