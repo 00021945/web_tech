@@ -217,6 +217,25 @@ img {
   gap: 32px;
 }
 
+.disclaimer {
+  position: fixed;
+  z-index: 10;
+  top: 15%;
+  left: 10px;
+
+  max-width: 500px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 12px;
+
+  background-color: rgba(0, 127, 139, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.disclaimer > .text {
+  color: var(--blue);
+}
+
 @media screen and (max-width: 855px) {
   .h1 {
     font-size: 48px;
